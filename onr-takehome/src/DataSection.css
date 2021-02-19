@@ -50,8 +50,27 @@ section {
 article {
   border: 1px solid lightgrey;
   border-radius: 8px;
-  width: 12rem;
+  width: 8.5rem;
+  height: 11rem;
   margin: 1rem 0.5rem 0rem 0.5rem;
   padding: 0.7rem;
   text-align: center;
+}
+
+article h5 {
+  margin-bottom: 0.5rem;
+}
+
+.inner-donut {
+  margin-top: -4.5rem;
+  font-size: 14px;
+}
+
+.inner-donut p {
+  margin-top: 0.3rem;
+}
+
+article p {
+  margin-top: 3rem;
+  font-size: 14px;
 }

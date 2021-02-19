@@ -1,10 +1,25 @@
 import React from 'react'
 import './DataSection.css'
+import DonutChart from 'react-d3-donut'
 
 export default function DataSection () {
 
 
+  /* Data for the donut charts */
+  const data = [
+    {
+      count: 20,
+      color: 'blue',
+      name: 'score',
+    },
+    {
+      count: 30,
+      color: 'lightgrey',
+      name: 'total fill',
+    }]
+
   return (
+
     <div>
       <div className="chart-display-options">
         <div>
@@ -39,7 +54,19 @@ export default function DataSection () {
       <section>
         <article>
           <h5>Quality Score</h5>
-          <p>Chart</p>
+          <DonutChart
+            innerRadius={40}
+            outerRadius={50}
+            transition={true}
+            svgClass="example1"
+            pieClass="pie1"
+            displayTooltip={true}
+            strokeWidth={0}
+            data={data} />
+          <div className="inner-donut">
+            <percentage>72</percentage>
+            <p>N/A</p>
+          </div>
           <p>Sample: 133</p>
         </article>
       </section>
